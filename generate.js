@@ -1,7 +1,8 @@
+require("dotenv").config();
 const { CohereClient } = require("cohere-ai");
 
 const cohere = new CohereClient({
-  token: "XdBcio99i9AR3LCfmSEgio0pz4dDsSd4pX17XYqY",
+  token: process.env.API_KEY,
 });
 
 (async () => {
